@@ -29,7 +29,7 @@ import numpy as np
 
 # Setup
 app = Flask(__name__)
-openai.api_key = os.getenv("OPENAI_API_KEY")
+openai.api_key = os.getenv("")
 
 # CLIP model for images
 device = "cuda" if torch.cuda.is_available() else "cpu"
